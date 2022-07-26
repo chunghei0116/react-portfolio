@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding:0 ;
+    background-color: #000000ed;
+    color: #CDCDCD;
+    font-family: 'Alegreya', serif;
+    box-sizing: border-box;
+}
+
+a:visited {
+      color: #CDCDCD;
+}
+.react{
+    color: #61DBFB;
+}
+
+.three{
+    color:aquamarine
+}
+
+.node{color: rgb(6, 189, 6);}

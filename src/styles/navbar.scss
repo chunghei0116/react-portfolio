@@ -1,0 +1,58 @@
+.mainPage {
+  height: 6rem;
+  position: absolute;
+  width: 100%;
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    .icon-title {
+      grid-column: 1;
+      text-align: right;
+      .first-name {
+        color: rgb(255, 255, 255);
+      }
+      .title-dot {
+        color: #ea7f3e;
+      }
+    }
+    .navbar-list {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      grid-column: 7/10;
+      list-style: none;
+      .navber-link {
+        text-decoration: none;
+      }
+    }
+    .icon-list {
+      display: flex;
+      align-items: center;
+      grid-column: 10;
+      justify-content: stretch;
+      column-gap: 0.5rem;
+    }
+    .icon-list {
+      border-left: 2px solid;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.active {
+  top: 0;
+  width: 100%;
+  transition: 0.1s linear;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.321);
+  z-index: 8;
+}
+
+.hidden {
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.5s linear;
+}

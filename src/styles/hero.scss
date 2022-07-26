@@ -1,0 +1,127 @@
+.og {
+  color: #ea7f3e;
+}
+.white {
+  color: rgb(255, 255, 255);
+}
+.hero {
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 7rem;
+  .hero-container {
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    .hero-left {
+      grid-column: 2/3;
+      .title-name {
+        font-size: 72px;
+        margin: 0;
+        font-weight: 100;
+      }
+      .dot {
+        border-bottom: 3px solid #ea7f3e;
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.321);
+      }
+      .social-link {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        .link-left {
+          margin: 1rem 0 0 0;
+          border-right: 2px solid;
+          padding-right: 0.25rem;
+        }
+        .link-right {
+          margin: 1rem 0 0 0;
+          padding-left: 0.25rem;
+        }
+      }
+      .cv-button {
+        margin-top: 3rem;
+        display: grid;
+        position: relative;
+        text-align: center;
+        width: 250px;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      .cv-button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        border: #ea7f3e 3px solid;
+        width: 250px;
+        height: 75px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .cv-button::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        border: #ea7f3e 3px solid;
+        width: 250px;
+        height: 75px;
+        transition: transform 0.3s ease;
+      }
+      .cv-button:hover::after {
+        transform: translate(-5px, -5px);
+      }
+      .cv-button:hover::before {
+        transform: translate(5px, 5px);
+      }
+    }
+    .hero-middle {
+      grid-column: 3/8;
+      display: flex;
+
+      justify-content: center;
+
+      img {
+        width: 300px;
+        height: fit-content;
+      }
+      .quote {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        p {
+          font-size: 18px;
+          text-align: right;
+        }
+      }
+    }
+
+    .hero-right {
+      grid-column: 8/11;
+      margin: 0 4rem 0 0;
+      padding: 0;
+
+      .hero-intro {
+        font-weight: 200;
+        font-size: 32px;
+        margin: 0;
+      }
+      .hero-title {
+        font-size: 38px;
+        margin: 0;
+      }
+      .learn-more {
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
